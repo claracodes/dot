@@ -1,0 +1,14 @@
+<div class="list-banner mb-3">
+  <%= link_to new_list_path do  %>
+    <%= image_tag "add.svg", alt: "add", class: 'add-icon' %>
+  <% end %>
+</div>
+
+<div class="list-cards">
+  <% @lists.each do |list| %>
+    <div class="list-card">
+      <%= image_tag "rectangle.svg", alt: "alttext" %>
+      <span><%= list.name.upcase %></span>
+    </div>
+  <% end %>
+</div>

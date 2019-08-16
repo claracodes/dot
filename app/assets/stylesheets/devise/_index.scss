@@ -1,0 +1,32 @@
+.login-banner {
+  background-image: asset-url('mountain1.jpg');
+  background-size: cover;
+  height: 60vh;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  margin-bottom: 3rem;
+
+  .login-title {
+    position: absolute;
+    left: 22px;
+    bottom: 15px;
+    font-size: 72px;
+    color: $fern;
+  }
+}
+
+.login-btn {
+  background: $fern;
+  color: $white;
+}
+
+.devise-links {
+  margin-top: 2rem;
+  margin-left: 5%;
+  a {
+    color: $normal-grey;
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,25 @@
+.list-banner {
+  background-image: asset-url('mountain2.jpg');
+  background-size: cover;
+  background-position: 0px -87px;
+  border-bottom-right-radius: 30px;
+  height: 16vh;
+  position: relative;
+  .add-icon {
+    position: absolute;
+    bottom: 25px;
+    right: 15px;
+  }
+}
+.list-cards {
+  margin-top: 3rem;
+}
+.list-card {
+  margin: 0 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid $normal-grey;
+  padding-bottom: 1.5rem;
+  span {
+    margin-left: 0.5rem
+  }
+}

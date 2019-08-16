@@ -1,0 +1,17 @@
+label {
+  display: none
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  color: $fern;
+  border-bottom: 1px solid $fern;
+  width: 70%;
+  border-radius: 0;
+  margin-left: 5%;
+}
+
+input[type="submit"] {
+  border-radius: 5px;
+}

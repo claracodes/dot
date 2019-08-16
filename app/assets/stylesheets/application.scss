@@ -10,4 +10,10 @@
 
 // Your CSS partials
 @import "components/index";
+@import "devise/index";
+@import "lists/index";
 @import "pages/index";
+
+body {
+  height: 100vh;
+}
