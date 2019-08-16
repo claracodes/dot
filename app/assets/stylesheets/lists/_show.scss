@@ -1,0 +1,68 @@
+.title-banner {
+  background-color: $old-blue;
+  border-bottom-right-radius: 30px;
+  height: 45vh;
+  color: $white;
+  position: relative;
+}
+.show-list-banner {
+  background-image: asset-url('mountain3.jpg');
+  background-size: cover;
+  border-bottom-right-radius: 30px;
+  height: 25vh;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.show-title {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.item-cards {
+  overflow: scroll;
+}
+
+.item-card {
+  background-color: rgba(218, 219, 221, 0.3);
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  position: relative;
+  span {
+    margin-left: 1rem;
+  }
+  .triangle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: transform 0.3s;
+  }
+}
+
+.turn-around {
+  transform: rotate(90deg)
+}
+
+
+.item-fold {
+  transition: visibility 0s, opacity 0.5s linear;
+  ul {
+    list-style-type: none;
+    li {
+      display: flex;
+      align-items: center;
+      padding-bottom: 1rem;
+    }
+    span {
+      margin-left: 2rem;
+    }
+    ul:last-child {
+      margin-bottom: 2rem;
+    }
+  }
+}
+

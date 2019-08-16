@@ -6,9 +6,11 @@
 
 <div class="list-cards">
   <% @lists.each do |list| %>
-    <div class="list-card">
-      <%= image_tag "rectangle.svg", alt: "alttext" %>
-      <span><%= list.name.upcase %></span>
-    </div>
+    <%= link_to list_path(list) do  %>
+      <div class="list-card">
+        <%= image_tag "rectangle.svg", alt: "alttext" %>
+        <span><%= list.name.upcase.truncate(20, omission: '..') %></span>
+      </div>
+    <% end %>
   <% end %>
 </div>

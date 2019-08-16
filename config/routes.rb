@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'lists#index'
 
-  resources :lists, only:  [:index, :new, :create] do
+  resources :lists, only:  [:index, :new, :create, :show] do
     resources :items, only: [:new, :create]
   end
 

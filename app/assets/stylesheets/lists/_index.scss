@@ -1,3 +1,5 @@
+@import "show";
+
 .list-banner {
   background-image: asset-url('mountain2.jpg');
   background-size: cover;
@@ -20,6 +22,15 @@
   border-bottom: 1px solid $normal-grey;
   padding-bottom: 1.5rem;
   span {
-    margin-left: 0.5rem
+    margin-left: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color: $blue-grey;
+  }
+}
+
+.list-card:active {
+  span {
+    text-decoration: none;
   }
 }
