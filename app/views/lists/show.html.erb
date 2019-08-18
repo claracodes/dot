@@ -20,7 +20,7 @@
       <% end %>
     </div>
     <% if item.sub_items.present?  %>
-      <div class="item-fold d-none" data-itemid='<%= item.id %>'>
+      <div class="item-fold" data-itemid='<%= item.id %>'>
         <ul>
           <% item.sub_items.each do |sub_item| %>
             <li >
@@ -43,9 +43,10 @@
       var subItem = Array.from(document.querySelectorAll('[data-itemId]')).find(function(item){
         return item.dataset.itemid == button.dataset.triangleitemid;
       });
-      subItem.classList.toggle('d-none')
-      button.classList.toggle('turn-around')
-      button.classList.toggle('unfolded')
+      // subItem.classList.toggle('d-none');
+      subItem.classList.toggle('unfold');
+      button.classList.toggle('turn-around');
+      button.classList.toggle('unfolded');
     })
   })
 </script>

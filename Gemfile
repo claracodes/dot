@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 ruby '2.6.3'
 
 gem 'bootsnap', require: false
-gem 'devise'
+gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma'
-gem 'rails', '5.2.3'
+gem 'rails', '6.0.0'
 gem 'redis'
 
 gem 'autoprefixer-rails'

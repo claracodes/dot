@@ -46,10 +46,10 @@
 .turn-around {
   transform: rotate(90deg)
 }
-
-
 .item-fold {
-  transition: visibility 0s, opacity 0.5s linear;
+  opacity: 0;
+  transition: all 0.5s ease;
+  height: 0px;
   ul {
     list-style-type: none;
     li {
@@ -65,4 +65,13 @@
     }
   }
 }
+
+
+.unfold {
+  // display: none;
+  height: 50px;
+  opacity: 1;
+  transition: height 0.3s ease-out, opacity 0.3s ease 0.5s;
+}
+
 
